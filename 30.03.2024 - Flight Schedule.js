@@ -12,9 +12,7 @@ function flightSchedule(input) {
             flights[flightNum].status = status;
         }
     }
-
     let command = input[2][0];
-
     if (command === 'Ready to fly') {
         for (let flightNum in flights) {
             if (flights[flightNum].status === 'Ready to fly') {
